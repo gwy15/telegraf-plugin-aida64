@@ -1,0 +1,13 @@
+# per https://github.com/influxdata/telegraf/blob/master/plugins/inputs/execd/README.md
+[[inputs.execd]]
+  ## One program to run as daemon.
+  ## NOTE: process and each argument should each be their own string
+  command = ["C:\\Program Files\\telegraf\\telegraf-plugin-aida64.exe"]
+
+  ## Define how the process is signaled on each collection interval.
+  ##   "STDIN"   : Send a newline on STDIN. (Recommended for gather inputs)
+  signal = "STDIN"
+
+  ## Delay before the process is restarted after an unexpected termination
+  restart_delay = "10s"
+  data_format = "influx"
