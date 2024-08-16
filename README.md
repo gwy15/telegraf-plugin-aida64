@@ -12,14 +12,14 @@ It reads data from AIDA64 and pass them to telegraf.
 
 0. open AIDA64 > Preferences > hardware monitoring > External Applications > Allow shared memory.
 1. Put telegraf-plugin-aida64.exe to, e.g., `C:\Program Files\telegraf`.
-2. Copy the content in [example-telegraf.toml]() and append to your telegraf config.
+2. Copy the content in [example-telegraf.toml](example-telegraf.toml) and append to your telegraf config.
 3. Restart your telegraf service.
 
 ---
 
 0. 打开 AIDA64 > 设置 > 硬件监视工具 > 外部程序 > 允许共享内存
 1. 把 telegraf-plugin-aida64.exe 放到比如 `C:\Program Files\telegraf` 下面。
-2. 把 [example-telegraf.toml]() 的内容拷贝到你的 telegraf 设置中。
+2. 把 [example-telegraf.toml](example-telegraf.toml) 的内容拷贝到你的 telegraf 设置中。
 3. 重启你的 telegraf 服务。
 
 ## Metrics format
