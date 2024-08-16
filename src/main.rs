@@ -12,7 +12,7 @@ fn main() {
         let t_ns = t.duration_since(std::time::UNIX_EPOCH).unwrap().as_nanos();
         let t_ns_s = format!("{t_ns}");
         let Ok(data) = shm::read_from_shared_memory() else {
-            eprintln!("Read AIDA64 using shm failed, please open AIDA64 > settings > hardware monitor tools > external programs > Allow shared memory");
+            eprintln!("Read AIDA64 using shm failed, please open AIDA64 > Preferences > hardware monitoring > External Applications > Allow shared memory");
             continue;
         };
         for point in data {
