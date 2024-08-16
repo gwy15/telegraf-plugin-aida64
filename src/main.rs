@@ -32,9 +32,7 @@ fn main() {
 struct Value(String);
 impl fmt::Display for Value {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
-        if self.0.parse::<i64>().is_ok() {
-            f.write_str(&self.0)
-        } else if self.0.parse::<f64>().is_ok() {
+        if self.0.parse::<i64>().is_ok() || self.0.parse::<f64>().is_ok() {
             f.write_str(&self.0)
         } else {
             write!(f, "{:?}", self.0)
